@@ -2,6 +2,7 @@ import streamlit as st
 import tempfile
 import os
 import shutil
+import uuid
 from ingest import ingest, ingest_temporary, embeddings, CHROMA_PATH
 from query import query
 from langchain_community.vectorstores import Chroma
@@ -17,6 +18,9 @@ st.title("📄 Document Q&A Assistant")
 st.caption("Upload documents or ask questions about the default knowledge base.")
 
 # ── Session state ─────────────────────────────────────────
+if "session_id" not in st.session_state:
+    st.session_state.session_id = str(uuid.uuid4())
+
 if "db" not in st.session_state:
     st.session_state.db = None
 
