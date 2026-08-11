@@ -8,3 +8,4 @@ sentence-transformers>=3.0.0
 python-dotenv>=1.0.1
 pypdf>=4.0.0
 chardet>=5.2.0
+torchvision
