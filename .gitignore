@@ -1,0 +1,25 @@
+# Environment variables
+.env
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Jupyter Notebooks & Checkpoints
+*.ipynb
+.ipynb_checkpoints/
+
+# Virtual Environments
+env/
+venv/
+llm_env/
+
+# Vector Database local persistence
+chroma_db/
+*.sqlite3
+
+# VS Code & IDE files
+.vscode/
+.idea/
