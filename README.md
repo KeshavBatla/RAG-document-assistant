@@ -1,4 +1,5 @@
 # 📄 RAG Document Assistant
+Website link: https://rag-document-assistant-kb.streamlit.app/
 
 An intelligent, context-aware RAG (Retrieval-Augmented Generation) document assistant built with **Streamlit**, **LangChain**, **ChromaDB**, and **Google Gemini (google-genai)**. 
 
