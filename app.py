@@ -53,7 +53,7 @@ with st.sidebar:
 
     if st.button("Use Default Documents"):
         with st.spinner("Loading default knowledge base..."):
-            DATA_PATH = r"C:\Users\batla\OneDrive\Desktop\RAGdocumnets"
+            DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
             st.session_state.db = ingest(DATA_PATH)
             st.session_state.chat_history = []
         st.success("✅ Default documents loaded")

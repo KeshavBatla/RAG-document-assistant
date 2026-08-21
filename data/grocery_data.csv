@@ -1,0 +1,100 @@
+Product_Name,Catagory,Supplier_Name,Warehouse_Location,Status,Product_ID,Supplier_ID,Stock_Quantity,Unit_Price
+Bell Pepper,Fruits & Vegetables,Eimbee,20 Pennsylvania Parkway,Discontinued,29-017-6255,43-348-2450,46,$4.60
+Vegetable Oil,Oils & Fats,Digitube,03643 Oakridge Lane,Backordered,79-569-8856,04-854-7165,51,$2.00
+Parmesan Cheese,Dairy,BlogXS,73 Graedel Street,Discontinued,28-146-2641,82-995-0739,38,$12.00
+Carrot,Fruits & Vegetables,Avaveo,44801 Myrtle Center,Discontinued,11-581-9869,22-867-3079,51,$1.50
+Garlic,Fruits & Vegetables,Katz,6195 Monterey Center,Discontinued,13-202-4809,24-281-7685,27,$7.00
+Lemon,Fruits & Vegetables,Yata,5141 Anniversary Crossing,Backordered,70-145-2550,75-849-4524,91,$2.40
+Coconut Sugar,Grains & Pulses,Lazz,38583 2nd Pass,Active,10-626-8536,23-274-3305,17,$5.00
+Anchovies,Seafood,Zoonder,86 Porter Junction,Discontinued,42-879-9478,00-900-0119,81,$10.00
+Cheese,Dairy,Oozz,05518 Saint Paul Street,Active,82-380-5378,96-353-3049,78,$9.00
+Yogurt,Dairy,Jaxnation,14042 Dottie Avenue,Backordered,23-265-8144,31-524-1628,55,$1.70
+Cheddar Cheese,Dairy,Gabcube,5 Oxford Pass,Active,62-393-9939,93-877-9384,60,$9.00
+Avocado Oil,Oils & Fats,Dabtype,3622 Anhalt Lane,Backordered,90-343-9640,54-919-9424,53,$10.00
+Orange,Fruits & Vegetables,Flashdog,3 Bashford Court,Backordered,36-899-5324,02-656-3112,94,$2.90
+Digestive Biscuit,Bakery,Devshare,2 Carioca Crossing,Backordered,41-538-3129,91-589-9007,77,$4.00
+Cauliflower,Fruits & Vegetables,Cogilith,01 Northfield Road,Active,47-843-8207,55-838-9088,34,$2.50
+Pear,Fruits & Vegetables,Roodel,2004 Cody Plaza,Discontinued,94-071-2261,25-706-2146,79,$4.50
+Egg (Turkey),Dairy,Bluezoom,94862 Beilfuss Terrace,Backordered,12-998-3882,06-151-9076,76,$2.50
+Ricotta Cheese,Dairy,Skimia,10342 Division Place,Active,36-127-4273,05-719-6858,50,$6.20
+Eggplant,Fruits & Vegetables,Blogpad,52 Namekagon Junction,Backordered,13-144-2169,11-742-5033,25,$3.00
+Whole Wheat Flour,Grains & Pulses,Dabjam,21343 Brentwood Circle,Backordered,86-978-6666,43-979-2253,38,$2.70
+Arabica Coffee,Beverages,Feedmix,36 3rd Place,Discontinued,40-681-9981,54-470-2479,45,$20.00
+Sweet Potato,Fruits & Vegetables,Trupe,7015 Ramsey Lane,Active,13-962-6263,26-061-5253,49,$2.00
+Mango,Fruits & Vegetables,Meevee,48 Vahlen Place,Backordered,10-002-6494,47-509-7282,89,$4.80
+Kale,Fruits & Vegetables,Blogpad,85 Farwell Parkway,Backordered,29-741-8132,49-384-4540,47,$4.00
+Jasmine Rice,Grains & Pulses,Topicware,07 Pankratz Point,Active,30-806-3823,36-451-3173,53,$4.75
+Sourdough Bread,Bakery,Plajo,338 Annamark Court,Discontinued,71-074-6292,42-201-4495,65,$4.00
+Green Coffee,Beverages,Skyndu,35 Golf Course Alley,Backordered,95-738-4658,67-404-3362,90,$12.00
+Arabica Coffee,Beverages,Yotz,96 Westridge Junction,Backordered,55-154-4728,33-466-7894,65,$20.00
+Tilapia,Seafood,Vinder,57 Eastwood Junction,Active,46-255-3073,68-230-9130,30,$7.00
+Arborio Rice,Grains & Pulses,Geba,31 Sullivan Hill,Active,95-640-0293,43-575-2151,34,$4.50
+Bread Flour,Grains & Pulses,Dazzlesphere,49148 Meadow Ridge Way,Backordered,45-250-4679,80-328-4990,54,$1.50
+Cucumber,Fruits & Vegetables,Kanoodle,38 Killdeer Point,Active,03-833-3577,87-032-6971,67,$1.80
+Cheese,Dairy,Eimbee,01 Gateway Plaza,Backordered,08-961-3009,41-825-5869,50,$9.20
+Milk,Dairy,Centimia,36483 Burning Wood Pass,Backordered,20-405-4865,16-019-7101,13,$0.90
+Lime,Fruits & Vegetables,Livefish,3 Meadow Valley Court,Backordered,49-377-9731,56-823-5908,18,$2.00
+Rice Flour,Grains & Pulses,Quatz,47817 Oneill Park,Active,39-810-2042,65-620-9866,24,$2.00
+Sourdough Bread,Bakery,Rhyloo,94 Mallory Center,Active,53-805-9523,99-864-0256,40,$4.50
+Cheese,Dairy,Shuffledrive,19 Shoshone Circle,Active,14-305-5348,71-092-6845,53,$9.00
+Sour Cream,Dairy,Skyvu,805 Center Parkway,Active,51-459-5630,29-567-3732,11,$4.00
+Whole Wheat Bread,Bakery,Lazz,46 Delaware Place,Backordered,88-183-5781,49-247-1217,17,$3.50
+Robusta Coffee,Beverages,Devpulse,2374 Chive Court,Discontinued,41-735-9837,35-462-7569,14,$10.00
+Chocolate Biscuit,Bakery,Yodo,7561 5th Terrace,Active,88-977-0175,58-087-3463,100,$5.00
+Palm Oil,Oils & Fats,Skipstorm,703 Hermina Center,Active,66-327-2821,82-525-7224,67,$1.80
+Anchovies,Seafood,Camido,709 Vidon Avenue,Discontinued,08-114-3922,19-418-7213,60,$10.00
+Sesame Oil,Oils & Fats,Dabtype,0313 Rockefeller Street,Discontinued,95-090-2788,95-715-6047,45,$6.50
+Lettuce,Fruits & Vegetables,Fadeo,19069 Cordelia Drive,Active,26-690-3784,70-463-6597,58,$2.00
+Feta Cheese,Dairy,Rhynyx,60356 Derek Lane,Discontinued,46-753-8430,35-042-9391,98,$7.00
+Apricot,Fruits & Vegetables,Skinix,36687 Maple Avenue,Backordered,15-905-7750,48-176-1622,42,$5.00
+Peanut Oil,Oils & Fats,Tagopia,13 Westport Hill,Discontinued,11-891-8213,25-741-5987,38,$4.00
+Olive Oil,Oils & Fats,Realmix,65 Chinook Circle,Discontinued,82-811-7988,41-772-9238,36,$6.00
+Whole Wheat Flour,Grains & Pulses,Gigaclub,759 Waywood Court,Active,31-746-4951,70-212-0990,67,$2.75
+Egg (Duck),Dairy,Katz,45190 Fordem Court,Backordered,97-300-7511,47-687-2255,37,$1.00
+Pineapple,Fruits & Vegetables,Brainverse,0 Delladonna Place,Active,88-304-2855,59-570-2020,20,$3.50
+Jasmine Rice,Grains & Pulses,Skyba,63 Debra Park,Discontinued,53-008-2419,86-841-6074,62,$4.75
+Cucumber,Fruits & Vegetables,Brainverse,157 David Center,Backordered,76-340-4432,79-915-4185,19,$1.75
+Trout,Seafood,Blogtag,4508 Shopko Trail,Active,26-010-9519,28-837-4164,29,$12.00
+Onion,Fruits & Vegetables,Oba,74 Menomonie Point,Discontinued,08-940-8578,37-686-1726,34,$2.00
+Cream,Dairy,Oyondu,74997 Katie Terrace,Discontinued,54-374-9986,33-818-4917,92,$2.50
+Sardines,Seafood,Eayo,7819 Fallview Park,Discontinued,67-625-9704,13-475-1009,33,$6.00
+Sourdough Bread,Bakery,Avamba,744 Green Center,Backordered,56-635-6764,20-257-6927,12,$4.50
+Anchovies,Seafood,Mybuzz,31 Loomis Park,Active,10-445-0741,82-470-7146,83,$10.00
+Peanut Oil,Oils & Fats,Twitterwire,1170 Shasta Circle,Backordered,76-584-4790,58-213-1146,21,$4.00
+Plum,Fruits & Vegetables,Topicstorm,15068 Scoville Court,Backordered,57-437-1828,54-226-4308,37,$4.00
+Sushi Rice,Grains & Pulses,Katz,5743 Superior Place,Backordered,62-777-6010,40-914-7156,77,$4.25
+Black Rice,Grains & Pulses,Vinder,3296 Walton Court,Backordered,06-955-3428,54-031-2945,30,$6.00
+Wild Rice,Grains & Pulses,Wordpedia,5 Toban Circle,Discontinued,04-758-0410,56-231-2524,26,$10.00
+Wild Rice,Grains & Pulses,Kayveo,8569 Bashford Court,Backordered,06-655-5498,89-574-3430,72,$9.75
+Pomegranate,Fruits & Vegetables,Meeveo,31892 Pennsylvania Street,Active,76-401-7083,29-156-0691,59,$6.00
+Black Rice,Grains & Pulses,Npath,6382 Anniversary Pass,Discontinued,30-429-2162,05-100-7102,34,$6.15
+Cream,Dairy,Riffpedia,09189 2nd Drive,Active,49-730-0159,62-766-8232,82,$2.40
+Cabbage,Fruits & Vegetables,Lajo,081 Jana Lane,Active,31-745-6850,96-215-2767,94,$0.90
+Sourdough Bread,Bakery,Vinte,72083 Acker Crossing,Active,69-468-5468,37-099-6976,59,$4.50
+Carrot,Fruits & Vegetables,Gevee,7744 Oxford Pass,Active,68-636-4774,40-436-0171,18,$1.45
+All-Purpose Flour,Grains & Pulses,Dabjam,050 Mcbride Avenue,Discontinued,21-120-6238,86-292-4587,55,$1.75
+Cheddar Cheese,Dairy,Wordify,1 Merchant Circle,Backordered,92-995-8689,18-682-7828,31,$9.00
+Green Coffee,Beverages,Aibox,97 Thierer Terrace,Discontinued,15-045-8444,29-143-2001,27,$12.00
+Whipped Cream,Dairy,Yakitri,069 Basil Center,Active,73-567-6194,81-927-7236,76,$4.00
+Plum,Fruits & Vegetables,Mybuzz,29 Vera Drive,Discontinued,48-242-8445,84-941-3034,40,$4.00
+Pineapple,Fruits & Vegetables,Quinu,0584 Lindbergh Alley,Active,33-507-9886,11-445-3951,68,$3.50
+Grapes,Fruits & Vegetables,Thoughtmix,183 Algoma Trail,Discontinued,80-025-6757,49-608-3851,59,$5.50
+Sunflower Oil,Oils & Fats,Photofeed,7 Rutledge Pass,Backordered,36-296-9609,46-041-1131,24,$2.50
+Lemon,Fruits & Vegetables,Centimia,01 Straubel Hill,Discontinued,56-054-8664,53-247-1844,59,$2.45
+Lemon,Fruits & Vegetables,Mydo,208 Miller Court,Active,64-478-4745,36-780-8625,63,$2.50
+Peanut Oil,Oils & Fats,Edgeify,203 Mariners Cove Junction,Backordered,67-546-1568,10-038-3988,57,$4.00
+Egg (Turkey),Dairy,Quinu,6810 Aberg Junction,Backordered,10-218-2680,72-024-1595,39,$2.50
+Short Grain Rice,Grains & Pulses,Katz,805 Nancy Crossing,Backordered,46-520-1819,10-762-7936,41,$4.50
+Tuna,Seafood,Meemm,8 Fremont Circle,Active,87-791-5803,89-843-0880,25,$18.00
+Cauliflower,Fruits & Vegetables,Dynabox,52 Victoria Plaza,Discontinued,71-436-5841,87-546-9674,87,$2.50
+Onion,Fruits & Vegetables,Wikizz,1991 Kropf Way,Active,07-679-1199,75-406-6250,20,$2.00
+Banana,Fruits & Vegetables,Youfeed,3825 Raven Avenue,Discontinued,48-957-8596,40-817-2222,95,$53.82
+Coconut,Fruits & Vegetables,Katz,78884 Union Street,Backordered,20-325-1965,97-155-1262,56,$5.00
+Bread Flour,Grains & Pulses,Oloo,3 Anthes Place,Discontinued,51-069-0489,19-978-0708,96,$1.50
+Almond Flour,Grains & Pulses,Trudoo,4627 Amoth Circle,Active,17-493-4579,67-541-7091,76,$9.50
+Jasmine Rice,Grains & Pulses,Topdrive,2 Miller Lane,Discontinued,46-622-3434,85-473-1534,17,$4.75
+Avocado Oil,Oils & Fats,Dabjam,591 Maple Junction,Active,05-899-1428,17-494-5505,14,$10.00
+Chocolate Biscuit,Bakery,Trunyx,48 Golf View Pass,Active,60-632-8752,07-948-8632,96,$5.00
+Black Rice,Grains & Pulses,BlogXS,752 Mccormick Way,Backordered,65-854-9364,64-800-4141,30,$6.30
+Greek Yogurt,Dairy,Thoughtstorm,550 Clemons Plaza,Active,66-268-8345,32-182-1895,91,$3.00
+Peach,Fruits & Vegetables,Youfeed,04 Hagan Crossing,Backordered,13-673-7016,78-726-6352,47,$4.00

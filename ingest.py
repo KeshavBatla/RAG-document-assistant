@@ -5,7 +5,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 CHROMA_PATH = "chroma_db" 
-DATA_PATH = r"C:\Users\batla\OneDrive\Desktop\RAGdocumnets"  
+DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data") 
 
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
