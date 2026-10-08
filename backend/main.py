@@ -3,6 +3,7 @@ import tempfile
 import shutil
 import uuid
 from fastapi import FastAPI, File, UploadFile, HTTPException, Form
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
@@ -147,6 +148,15 @@ async def get_loaded_documents():
         return {"documents": filenames}
     except Exception as e:
         return {"documents": [], "error": str(e)}
+
+# Serve frontend
+FRONTEND_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "..",
+    "frontend"
+)
+
+app.mount("/", StaticFiles(directory=FRONTEND_PATH, html=True), name="frontend")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
