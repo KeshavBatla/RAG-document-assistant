@@ -46,29 +46,6 @@ class UploadResponse(BaseModel):
 # For Vercel serverless, we'll need to handle this differently - likely load on each request
 db_instance = None
 
-@app.on_event("startup")
-async def startup_event():
-    """Load default knowledge base on startup if chroma_db exists"""
-    global db_instance
-    try:
-        if os.path.exists(CHROMA_PATH) and os.listdir(CHROMA_PATH):
-            db_instance = Chroma(
-                persist_directory=CHROMA_PATH,
-                embedding_function=embeddings
-            )
-            print("✅ Loaded existing ChromaDB on startup")
-        else:
-            # Load default documents from data directory
-            DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
-            if os.path.exists(DATA_PATH):
-                db_instance = ingest(DATA_PATH)
-                print("✅ Loaded default documents on startup")
-            else:
-                print("⚠️ No data directory found, starting with empty DB")
-    except Exception as e:
-        print(f"⚠️ Error loading DB on startup: {e}")
-        db_instance = None
-
 @app.get("/api/health", response_model=HealthResponse)
 async def health_check():
     """Health check endpoint"""
