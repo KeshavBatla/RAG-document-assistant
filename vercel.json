@@ -19,9 +19,5 @@
       "src": "/(.*)",
       "dest": "frontend/index.html"
     }
-  ],
-  "env": {
-    "GEMINI_API_KEY": "GEMINI_API_KEY",
-    "MODEL_NAME": "gemini-3.1-flash-lite"
-  }
+  ]
 }
