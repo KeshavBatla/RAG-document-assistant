@@ -1,13 +1,26 @@
 import os
-from langchain_community.document_loaders import PyPDFLoader, CSVLoader, TextLoader #as we are loading different files so we didnt used any dict loaders
+from langchain_community.document_loaders import PyPDFLoader, CSVLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from huggingface_hub import InferenceClient
 
-CHROMA_PATH = "chroma_db" 
-DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data") 
+CHROMA_PATH = "chroma_db"
+DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+class HFEmbeddings:
+    def __init__(self, model_name, api_key):
+        self.client = InferenceClient(model=model_name, token=api_key)
+
+    def embed_documents(self, texts):
+        return self.client.feature_extraction(texts)
+
+    def embed_query(self, text):
+        return self.embed_documents([text])[0]
+
+embeddings = HFEmbeddings(
+    model_name="all-MiniLM-L6-v2",
+    api_key=os.getenv("HF_API_KEY")
+)
 
 def load_directory_documents(folder_path: str):
     documents = []
@@ -20,7 +33,7 @@ def load_directory_documents(folder_path: str):
 
             if ext == ".csv":
                 loader = CSVLoader(file_path=full_path)
-                
+
             elif ext == ".pdf":
                 loader = PyPDFLoader(file_path=full_path)
 
@@ -44,7 +57,7 @@ def load_directory_documents(folder_path: str):
 def split_documents(documents):
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=500,
-        chunk_overlap=50,  
+        chunk_overlap=50,
         add_start_index=True
     )
     return splitter.split_documents(documents)
