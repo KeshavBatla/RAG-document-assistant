@@ -49,11 +49,10 @@ db_instance = None
 @app.get("/api/health", response_model=HealthResponse)
 async def health_check():
     """Health check endpoint"""
-    global db_instance
-    if db_instance is not None:
-        return HealthResponse(status="healthy", message="RAG Document Assistant is running")
-    else:
-        return HealthResponse(status="degraded", message="Database not initialized")
+    return HealthResponse(
+        status="healthy",
+        message="RAG Document Assistant is running"
+    )
 
 @app.post("/api/upload", response_model=UploadResponse)
 async def upload_files(files: List[UploadFile] = File(...)):
