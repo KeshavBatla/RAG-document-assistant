@@ -87,10 +87,16 @@ async def upload_files(files: List[UploadFile] = File(...)):
             files_processed=len(files)
         )
     except Exception as e:
-        # Cleanup on error
         if 'temp_dir' in locals():
             shutil.rmtree(temp_dir, ignore_errors=True)
-        raise HTTPException(status_code=500, detail=f"Error processing files: {str(e)}")
+
+        print(f"UPLOAD ERROR TYPE: {type(e).__name__}")
+        print(f"UPLOAD ERROR: {e}")
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"{type(e).__name__}: {str(e)}"
+        )
 
 @app.post("/api/query", response_model=QueryResponse)
 async def query_documents(request: QueryRequest):
