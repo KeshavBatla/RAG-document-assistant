@@ -657,9 +657,12 @@
                     documentFilter.appendChild(option);
                 });
 
+                // Enable or disable Send button based on whether there are documents
+                sendBtn.disabled = documents.length === 0;
             } catch (error) {
                 console.error('Error loading documents list:', error);
                 documentsList.innerHTML = '<p>Error loading documents</p>';
+                sendBtn.disabled = true; // Disable send button on error
             }
         }
 
