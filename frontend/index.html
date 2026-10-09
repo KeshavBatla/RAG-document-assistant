@@ -442,7 +442,6 @@
         const fileInput = document.getElementById('fileInput');
         const fileList = document.getElementById('fileList');
         const processBtn = document.getElementById('processBtn');
-        const loadDefaultBtn = document.getElementById('loadDefaultBtn');
         const documentsList = document.getElementById('documentsList');
         const documentFilter = document.getElementById('documentFilter');
         const clearChatBtn = document.getElementById('clearChatBtn');
@@ -490,7 +489,6 @@
 
             // Buttons
             processBtn.addEventListener('click', processUploadedFiles);
-            loadDefaultBtn.addEventListener('click', loadDefaultDocuments);
             clearChatBtn.addEventListener('click', clearChat);
             sendBtn.addEventListener('click', sendMessage);
 
@@ -599,7 +597,6 @@
         async function loadDefaultDocuments() {
             try {
                 setLoading(true);
-                loadDefaultBtn.disabled = true;
 
                 const response = await fetch(`${API_BASE}/upload`, {
                     method: 'POST'
@@ -621,7 +618,6 @@
                 showMessage('error', `Error loading default documents: ${error.message}`);
             } finally {
                 setLoading(false);
-                loadDefaultBtn.disabled = false;
             }
         }
 
