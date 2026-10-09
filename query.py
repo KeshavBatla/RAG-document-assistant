@@ -30,7 +30,7 @@ class HFEmbeddings:
         return self.embed_documents([text])[0]
 
 embeddings = HFEmbeddings(
-    model_name="all-MiniLM-L6-v2",
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
     api_key=os.getenv("HF_API_KEY")
 )
 
