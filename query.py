@@ -4,7 +4,7 @@ import json
 import google.genai as genai
 from google.genai import types
 from langchain_community.vectorstores import Chroma
-from huggingface_hub import InferenceClient
+import requests
 
 load_dotenv(override=True)
 API_KEY = os.getenv("GEMINI_API_KEY")
@@ -12,26 +12,33 @@ MODEL_NAME=os.getenv("MODEL_NAME")
 
 client = genai.Client(api_key=API_KEY)
 
-class HFEmbeddings:
+class JinaEmbeddings:
     def __init__(self, model_name, api_key):
-        self.client = InferenceClient(
-            provider="auto",
-            api_key=api_key
-        )
         self.model_name = model_name
+        self.api_key = api_key
+        self.url = "https://api.jina.ai/v1/embeddings"
 
     def embed_documents(self, texts):
-        return self.client.feature_extraction(
-            texts,
-            model=self.model_name
-        )
+        payload = {
+            "model": self.model_name,
+            "input": texts
+        }
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}"
+        }
+        response = requests.post(self.url, json=payload, headers=headers)
+        response.raise_for_status()
+        results = response.json()
+        embeddings = [result['embedding'] for result in results['data']]
+        return embeddings
 
     def embed_query(self, text):
         return self.embed_documents([text])[0]
 
-embeddings = HFEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2",
-    api_key=os.getenv("HF_API_KEY")
+embeddings = JinaEmbeddings(
+    model_name="jina-embeddings-v5-text-small",
+    api_key=os.getenv("JINA_API_KEY")
 )
 
 #call llm for query modify and specify that is that require full summary, particular summary or any question

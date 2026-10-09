@@ -1,32 +1,39 @@
 import os
+import requests
 from langchain_community.document_loaders import PyPDFLoader, CSVLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from huggingface_hub import InferenceClient
 
 CHROMA_PATH = "chroma_db"
 DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
-class HFEmbeddings:
+class JinaEmbeddings:
     def __init__(self, model_name, api_key):
-        self.client = InferenceClient(
-            provider="auto",
-            api_key=api_key
-        )
         self.model_name = model_name
+        self.api_key = api_key
+        self.url = "https://api.jina.ai/v1/embeddings"
 
     def embed_documents(self, texts):
-        return self.client.feature_extraction(
-            texts,
-            model=self.model_name
-        )
+        payload = {
+            "model": self.model_name,
+            "input": texts
+        }
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}"
+        }
+        response = requests.post(self.url, json=payload, headers=headers)
+        response.raise_for_status()
+        results = response.json()
+        embeddings = [result['embedding'] for result in results['data']]
+        return embeddings
 
     def embed_query(self, text):
         return self.embed_documents([text])[0]
 
-embeddings = HFEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2",
-    api_key=os.getenv("HF_API_KEY")
+embeddings = JinaEmbeddings(
+    model_name="jina-embeddings-v5-text-small",
+    api_key=os.getenv("JINA_API_KEY")
 )
 
 def load_directory_documents(folder_path: str):
